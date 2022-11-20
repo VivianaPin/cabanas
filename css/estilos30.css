@@ -1,0 +1,25 @@
+a{
+    text-align: center;
+    font-family: 'Lucida Bright';
+  }
+
+header {
+    background: #06233f;
+    color: maroon;
+}
+.main {
+    background: #727171;
+}
+
+.contenedor:hover .imagen {
+    -webkit-transform:scale(1.5);transform:scale(1.5);
+}
+.contenedor {
+    overflow:hidden;
+}
+
+footer {
+    background: #16a085;
+    color: #fff;
+}
+

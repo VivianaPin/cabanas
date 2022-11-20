@@ -1,0 +1,100 @@
+/*
+  root es para las variables, es muy cómodo ocupar las variables.
+  Ocupe la letra popins y desde aquí la importe, en lugar del index.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+:root{
+  --fuentetitulo: 'Poppins';
+}
+h1, h3, h4, p{
+  font-family: var(--fuentetitulo);
+}
+h1{
+  font-size: 60px;
+  color: white;
+}
+h2{
+  font-size:  50px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: rgb(71, 20, 20);
+  text-align: center;
+}
+h3{
+  color: white;
+}
+p{
+  font-size: 25px;
+}
+img{
+  width: 100%;
+  transition: 1s;
+}
+
+.carousel-item img{
+  height: 550px;
+}
+.negro{
+  color: black;
+}
+.color1 img:hover{
+  transition: 1s;
+  transform: scale(.9);
+}
+.color2 img:hover{
+  transition: 1s;
+  transform: scale(.9);
+}
+.color3 img:hover{
+  transition: 1s;
+  transform: scale(.9);
+}
+.titulo{
+  font-size: 100px;
+}
+.copyright{
+  font-family: var(--fuentetitulo);
+}
+
+#main-container #logo{
+  width: 100px;
+  text-align: center;
+}
+
+#main-container #logo #back{
+  padding: 20px 0;
+}
+
+#main-container #logo #back a{
+  color: white;
+  text-decoration: none;
+}
+
+#main-container #logo #back a:hover{
+  color: white;
+  text-decoration: underline;
+}
+
+/*
+Esto es para hacerlo responcive, adaptable a dispositivos más pequeños
+o  más grandes, este caso es más pequeño.
+ Es com oun if
+ si tiene un maximo de ancho de 500px ejecutará eso.
+*/
+@media(max-width: 500px){
+  h1{
+    font-size: 40px;
+  }
+  p{
+    font-size: 20px;
+  }
+  img{
+    padding: 10px;
+  }
+  .carousel-item img{
+    height: 250px;
+  }
+  .titulo{
+    font-size: 50px;
+  }
+}
